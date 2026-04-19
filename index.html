@@ -1,69 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
-
-<style>
+<style> 
     h1{
-        color: brown;
-        font-size: 80px;
+        color:red;
+        font-size: 40px;
     }
-
-
 </style>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caballos</title>
     <link rel="stylesheet" href="css/estilospropios.css">
 </head>
+
+
+
 <body>
-<h1>LOS CABALLOS</h1>
-<img src="imagenes/caballos1.jpg" alt="Caballos">
+
+  <nav id="menuPpal">
+    <a href="#">Contacto</a>
+    <a href="#">Imágenes</a>
+    <a href="#">Videos</a>
+    <a href="#">Zonas</a>
+</nav>
+
+<h1>LOS CABALLOS SALVAJES</h1>
+
+<img src="imagenes/caballos1.jpg" alt="Caballos" id="logo" class="fotografias">
 
 <hr>
 
-<h1 style="color:aquamarine;">Video Sobre caballos</h1>
-<video src="videos/Mustangs_ Los Caballos Salvajes, Leyendas del Oeste Americano.mp4" controls></video>
+
+ <section>
+    <h1 style="color:rgb(54, 97, 189);">Video sobre caballos</h1> 
+
+ <p class="parraItalica">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit similique reiciendis pariatur a, sed quas iste quo ab accusamus asperiores neque voluptates ut alias, voluptas totam dolore? Incidunt, totam at!</p>
+
+ <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit similique reiciendis pariatur a, sed quas iste quo ab accusamus asperiores neque voluptates ut alias, voluptas totam dolore? Incidunt, totam at!</p>
+
+<h3> caballos</h3>
+        
+ <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit similique reiciendis pariatur a, sed quas iste quo ab accusamus asperiores neque voluptates ut alias, voluptas totam dolore? Incidunt, totam at!</p>
+
+</selection>
+
+<!--ESTO ES UN VIDEO DE YOUTUBE-->
+
+<video src="videos/Mustangs_ Los Caballos Salvajes, Leyendas del Oeste Americano.mp4" controls width="600"></video>
 
 <hr>
+<img src="imagenes/caballos1.jpg" alt="Caballos" id="caballoprincipal" class="fotografias">
 
-<p>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur eius dicta cumque dolore distinctio dolorem saepe, facere ipsam ipsa nihil reprehenderit officiis minus, incidunt sequi sed ut accusantium ullam aspernatur sint in, facilis suscipit. Impedit a non at, necessitatibus corporis aspernatur omnis sequi nobis aliquid vero obcaecati velit deserunt nisi.
-</p>
 
 <h3>Canción</h3>
 
 <audio src="Audios/Sonido del caballo relinchando.mp4" controls></audio>
 
-<br><br>
+<h1> Tabla sobre especies de caballos</h1>
+<table border="1" width="350"></table>
+
+<p  class="parraItalica">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ducimus libero non, illo optio quos commodi quisquam incidunt doloribus earum?</p>
+
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem doloremque distinctio veritatis. Aut accusantium repudiandae voluptas iure totam, cum non!</p>
+    <table align="center" border="1" width="500px" id="tabla1">
 
 <center>
-<table border="1" width="500">
-    <caption>Especies en Latinoamérica</caption>
 
+ <caption>Especies en Latinoamérica</caption>
     <thead>
         <tr>
+            
+
             <th>Pais</th>
             <th>Item</th>
             <th>Foto</th>
             <th>Especie</th>
         </tr>
     </thead>
-
-    <tbody>
+    <tbody aling="center">
         <tr>
             <td></td>
             <td></td>
             <td colspan="2"><center>CARACTERÍSTICAS</center></td>
         </tr>
-
         <tr>
             <td rowspan="2">COLOMBIA</td>
             <td>1</td>
             <td><img src="imagenes/especie1.jpg" width="120px"></td>
             <td>Especie 1</td>
         </tr>
-
         <tr>
             <td>2</td>
             <td><img src="imagenes/especie2.jpg" width="120px"></td>
@@ -73,63 +101,67 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur eius dicta
 </table>
 </center>
 
-<br><br>
+<nav id="menu2">
+    <a href="#">colores</a>
+    <a href="#">tamañoss</a>
+    <a href="#">naturaleza</a>
+    <a href="#">ecosistema</a>
+</nav>
+
+<!--FORMULARIOS-->
+
 
 <form action="" method="">
-    <label>Nombre:</label>
-    <input type="text">
-    <br><br>
+    <br>
+    <label for="nombre1">Nombre:</label>
+    <input type="text" name="nombre1" id="nombre1">
+    <br>
 
     <label>Identificación:</label>
-    <input type="number" name="identificacion" id="identificacion1">
-    <br><br>
+    <input type="number" name="identificacion1" id="identificacion1">
+    <br>
 
-    <label>Correo electrónico:</label>
+    <label for="Correo Electronico">Correo electrónico:</label>
     <input type="email">
-    <br><br>
 
-    <label>Contraseña:</label>
+    <br>
+
+    <label for="">Contraseña:</label>
     <input type="password">
 <br>
 
-    <label for="Genero">Género:</label>
+    <label>Género:</label>
 <br>
 
- <label for="masculino">masculino</label>
-<input type="radio" name="genero" id="masculino" value="">
+  <label for="masculino1">Masculino </label>
+    <input type="radio" name="genero" id="masculino1" value="1">
+    <label for="femenino1">Femenino</label> 
+    <input type="radio" name="genero" id="femenino1" value="2">
+    Otro
+    <input type="radio" name="genero" id="otro1" value="3">
 
-<label for="femenino">femenino</label>
-<input type="radio" name="genero" id="femenino" value="">
-
-<label for="otro">otro</label>
-<input type="radio" name="genero" id="otro" value="">
 
 <br>
-
 
 <label>¿Qué opina usted sobre los caballos?</label>
 <br>
+ <textarea name="textoCaballos" id="textoCaballos" rows="10" cols="40"></textarea>
 
-<textarea name="textocaballos" id="textocaballos"></textarea>
+<br>
 
-<br><br>
+<label for="paisReside">País</label>
 
-<label for="PaisReside">País</label>
+<select name="paisReside" id="paisReside">
 
-<select>
     <option value="">--SELECCIONE--</option>
     <option value="colombia">Colombia</option>
     <option value="venezuela">Venezuela</option>
     <option value="peru">Perú</option>
 </select>
 
-
-
 <br>
-
     <input type="submit" value="Guardar datos">
 
 </form>
 
 </body>
-</html>
