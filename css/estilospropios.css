@@ -18,7 +18,7 @@
 
 
 h1{
-    color:purple;
+    color:rgb(173, 148, 173);
 }
 
 #logo
@@ -32,7 +32,7 @@ width: 200px;
 }
 .fotografias
 {
-/*border:3px solid blue;*/
+border:3px solid blue;
 }
 #menuPpal > a
 {
@@ -75,5 +75,27 @@ h3
 }
 #textoLogo
 {
-    color:#262401;
+    color:#2c2c12;
+}
+
+#menuPpal
+{
+    background-color:#8C884F  ;
+    padding: 7px;
+    
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 5px 5px black;
+}
+
+#menuPpal li
+{
+    display: inline-block;
+    list-style: none;
+    padding: 10;
+}
+
+#menuPpal a
+{
+    text-decoration: none;
+    color:#383834 ;
 }
