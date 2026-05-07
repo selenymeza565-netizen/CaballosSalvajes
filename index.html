@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
 
-    <style> 
-        h1 {
-            color: red;
-            font-size: 40px;
-        }
-    </style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caballos</title>
-    
     <link rel="stylesheet" href="css/estilospropios.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&display=swap" rel="stylesheet">
-
+    <style>
+        h1 {
+            color: rgb(169, 144, 206);
+            font-size: 40px;
+        }
+    </style>
 </head>
 
 <body>
@@ -28,35 +26,141 @@
                     <img src="imagenes/especie2-removebg-preview.png" alt="Caballos" id="logo">
                 </div>
                 <div id="textoLogo" class="fondamento-regular">
-                    protección animal
+                    Protección Animal
                 </div>
             </center>
         </div>
 
+        <nav id="menuPpal">
+            <ul>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Imágenes</a></li>
+                <li><a href="#">Videos</a></li>
+                <li><a href="#">Zonas</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav id="menuPpal">
-        <ul>|
-      <li><a href="#">Contacto</a></li> 
-      <li><a href="#">Imágenes</a></li> 
-      <li><a href="#">Videos</a></li> 
-       <li><a href="#">Zonas</a></li> 
-        </ul>
-    </nav>
+    <main>
 
-    <h1>LOS CABALLOS SALVAJES</h1>
+        <!-- Sección  -->
+        <section id="seccion1">
+            <div id="contVideo">
+                <h1 style="color:rgb(150, 169, 211);"> ¡CABALLOS SALVAJES!</h1>
+                <video src="videos/Mustangs_ Los Caballos Salvajes, Leyendas del Oeste Americano.mp4" id=videoPpal controls width="600"></video>
+            </div>
 
-    <hr>
+            <div id="textoPpal">
+                <h1>Caballos Salvajes</h1>
+                <p class="parraItalica">
+                    Los caballos salvajes, como los famosos Mustangs del oeste americano, son animales que viven en total libertad en la naturaleza. 
+                    A diferencia de los caballos domésticos, ellos se organizan en manadas guiadas por un líder, recorriendo grandes distancias para encontrar agua y pasto fresco.
+                </p>
+                
+                <p>
+                    Estos animales son un símbolo de resistencia y fuerza, adaptándose a climas difíciles y protegiendo siempre a los miembros más jóvenes del grupo. 
+                    Actualmente, existen esfuerzos internacionales para proteger sus territorios y asegurar que sigan corriendo libres en sus ecosistemas naturales.
+                </p>
+                <h1 style="color:rgb(150, 169, 211);"> Algunos</h1>
+            </div>
+        </section>
 
-    <section>
-        <h1 style="color:rgb(134, 160, 216);">Video sobre caballos</h1> 
+        <!-- Sección Imágenes -->
+        <section id="seccion2">
+            <div class="serv">
+                <img src="imagenes/caballos1.jpg" alt="Caballo especie 1">
+            </div>
+            <div class="serv">
+                <img src="imagenes/caballos1.jpg" alt="Caballo especie 2">
+            </div>
+            <div class="serv">
+                <img src="imagenes/caballo2.jpg" alt="Caballo especie 3">
+            </div>
+        </section>
 
-        <video src="videos/Mustangs_ Los Caballos Salvajes, Leyendas del Oeste Americano.mp4" controls width="600"></video>
+        <!-- Sección Formulario  -->
+        <section id="seccion3">
+            <div id="contenedorFormulario">
+                <form action="" method="">
+                    <br>
+                    <label for="nombre1">Nombre:</label>
+                    <input type="text" name="nombre1" id="nombre1"><br>
 
-        <p class="parraItalica">Los caballos salvajes, como los famosos Mustangs del oeste americano, son animales que viven en total libertad en la naturaleza. A diferencia de los caballos domésticos, ellos se organizan en manadas guiadas por un líder, recorriendo grandes distancias para encontrar agua y pasto fresco.</p>
+                    <label for="identificacion1">Identificación:</label>
+                    <input type="number" name="identificacion1" id="identificacion1"><br>
+                  
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email"><br>
 
-        <p>Estos animales son un símbolo de resistencia y fuerza, adaptándose a climas difíciles y protegiendo siempre a los miembros más jóvenes del grupo. Actualmente, existen esfuerzos internacionales para proteger sus territorios y asegurar que sigan corriendo libres en sus ecosistemas naturales.
-        <h3>ALGUNOS </h3>
+                    <label for="password">Contraseña:</label>
+                    <input type="password"><br>
+
+                    <label>Género:</label><br>
+                    <label for="masculino1">Masculino</label>
+                    <input type="radio" name="genero" id="masculino1" value="1">
+                    <label for="femenino1">Femenino</label>
+                    <input type="radio" name="genero" id="femenino1" value="2">
+                    <label for="otro1">Otro</label>
+                    <input type="radio" name="genero" id="otro1" value="3"><br>
+
+                    <label for="textoCaballos">¿Qué opina usted sobre los caballos?</label><br>
+                    <textarea name="textoCaballos" id="textoCaballos" rows="10" cols="40"></textarea><br>
+
+                    <label for="paisReside">País</label>
+                    <select name="paisReside" id="paisReside">
+                        <option value="">--SELECCIONE--</option>
+                        <option value="colombia">Colombia</option>
+                        <option value="venezuela">Venezuela</option>
+                        <option value="peru">Perú</option>
+                    </select><br>
+
+                    <input type="submit" value="Guardar datos">
+                </form>
+            </div>
+
+            <div id="contenedortabla">
+                <h1>Tabla sobre especies de caballos</h1>
+                <p class="parraItalica">En esta sección organizé una tabla con las especies más comunes en Colombia.</p>
+                <p>Aquí se muestra una lista breve con la foto y el nombre de cada especie.</p>
+
+                <table align="center" border="1" width="500px" id="tabla1">
+                    <caption>Especies en Latinoamérica</caption>
+                    <thead>
+                        <tr>
+                            <th>País</th>
+                            <th>Item</th>
+                            <th>Foto</th>
+                            <th>Especie</th>
+                        </tr>
+                    </thead>
+                    <tbody align="center">
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td colspan="2">CARACTERÍSTICAS</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">COLOMBIA</td>
+                            <td>1</td>
+                            <td><img src="imagenes/especie1.jpg" width="120px"></td>
+                            <td>Especie 1</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><img src="imagenes/especie2.jpg" width="120px"></td>
+                            <td>Especie 2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div id="ContenedorUbicacion">
+          
+             <h3>ALGUNOS </h3>
                 
         <p> <ul>
     <li>Mustang</li>
@@ -70,103 +174,14 @@
 </ul>
 
 </p>
-    </section>
+        </div>
 
-    <hr>
-
-    <img src="imagenes/caballos1.jpg" alt="Caballos" id="caballoprincipal" class="fotografias">
-
-    <h3>Canción</h3>
-    <audio src="Audios/Sonido del caballo relinchando.mp4" controls></audio>
-
-    <h1>Tabla sobre especies de caballos</h1>
-
-    <p class="parraItalica">En esta sección organizé una tabla con las especies más comunes en Colombia.</p>
-
-    <p>Aquí se muestra una lista breve con la foto y el nombre de cada especie.</p>
-    
-    <center>
-        <table border="1" width="500px" id="tabla1">
-            <caption>Especies en Latinoamérica</caption>
-            <thead>
-                <tr>
-                    <th>Pais</th>
-                    <th>Item</th>
-                    <th>Foto</th>
-                    <th>Especie</th>
-                </tr>
-            </thead>
-            <tbody align="center">
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td colspan="2">CARACTERÍSTICAS</td>
-                </tr>
-                <tr>
-                    <td rowspan="2">COLOMBIA</td>
-                    <td>1</td>
-                    <td><img src="imagenes/especie1.jpg" width="120px"></td>
-                    <td>Especie 1</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td><img src="imagenes/especie2.jpg" width="120px"></td>
-                    <td>Especie 2</td>
-                </tr>
-            </tbody>
-        </table>
-    </center>
-
-    <nav id="menu2">
-        <a href="#">colores</a>
-        <a href="#">tamañoss</a>
-        <a href="#">naturaleza</a>
-        <a href="#">ecosistema</a>
-    </nav>
-
-    <form action="" method="">
-        <br>
-        <label for="nombre1">Nombre:</label>
-        <input type="text" name="nombre1" id="nombre1">
-        <br>
-
-        <label for="identificacion1">Identificación:</label>
-        <input type="number" name="identificacion1" id="identificacion1">
-        <br>
-
-        <label>Correo electrónico:</label>
-        <input type="email">
-        <br>
-
-        <label>Contraseña:</label>
-        <input type="password">
-        <br>
-
-        <label>Género:</label>
-        <br>
-        <label for="masculino1">Masculino </label>
-        <input type="radio" name="genero" id="masculino1" value="1">
-        <label for="femenino1">Femenino</label> 
-        <input type="radio" name="genero" id="femenino1" value="2">
-        <label for="otro1">Otro</label>
-        <input type="radio" name="genero" id="otro1" value="3">
-        <br>
-
-        <label>¿Qué opina usted sobre los caballos?</label>
-        <br>
-        <textarea name="textoCaballos" id="textoCaballos" rows="10" cols="40"></textarea>
-        <br>
-
-        <label for="paisReside">País</label>
-        <select name="paisReside" id="paisReside">
-            <option value="">--SELECCIONE--</option>
-            <option value="colombia">Colombia</option>
-            <option value="venezuela">Venezuela</option>
-            <option value="peru">Perú</option>
-        </select>
-        <br>
-        <input type="submit" value="Guardar datos">
-    </form>
+        <div id="ContenedorRedes">
+            <h3>Audio</h3>
+            <audio src="Audios/Sonido del caballo relinchando.mp4" controls></audio>
+        </div>
+    </footer>
 
 </body>
 </html>
+

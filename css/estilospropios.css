@@ -99,3 +99,40 @@ h3
     text-decoration: none;
     color:#383834 ;
 }
+
+
+#seccion1 {
+    display:flex ;
+   
+}
+#contVideo {
+    text-align: center;
+    width: 50%;
+    /*border: 3px solid rgb(138, 115, 83);*/
+
+   
+}
+ #textoPpal{
+       width: 50%; 
+      /*border: 3px solid rgb(97, 90, 90);*/
+      
+    }
+#videoPpal{
+    width:80% ;
+   
+    padding: 50px;
+    border-radius: 15px;
+    margin: 20px;
+    box-shadow: 5px 5px 15px 5px gray;
+}
+
+#seccion2 {
+    display:flex ;
+   flex-direction:row ;
+   justify-content: space-evenly;
+    background-color: #8C884F;
+}
+.serv{
+    margin: 20px;
+   
+}
