@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 .fondamento-regular {
   font-family: "Fondamento", cursive;
   font-weight: 400;
@@ -17,8 +18,9 @@
 
 
 
+
 h1{
-    color:rgb(173, 148, 173);
+    color:rgb(201, 138, 102);
 }
 
 #logo
